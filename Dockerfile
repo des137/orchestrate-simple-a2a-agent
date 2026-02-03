@@ -9,7 +9,7 @@ COPY . /app
 RUN pip install uv
 
 # Install dependencies
-RUN uv sync --frozen --no-dev
+RUN uv sync --no-dev
 
 # Expose port
 EXPOSE 8080
